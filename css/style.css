@@ -1,0 +1,761 @@
+:root{
+    --text-primary-color: #131313;
+    --text-title-color:#6F6F6F;
+    --white-color: #ffff;
+    --color-red:#FF4040;
+}
+/*-----scroll--------*/
+.bike__slider .slick-dots{
+right: 0;
+top: 50px;
+}
+
+.slick-dots{
+    position: absolute;
+    
+}
+.slick-dots li + li {
+    padding-top: 10px;
+}
+.slick-dots button{
+    font-size: 0;
+    padding: 0;
+    border: none;
+    background-color: var(--text-primary-color) ;
+    width: 2px;
+    height: 25px;
+    cursor: pointer;
+}
+.slick-active button {
+    background-color: var(--color-red);
+}
+
+/*-------------*/
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+li{
+    padding-left: 0;
+}
+a{
+    text-decoration: none;
+    color:inherit;
+}
+
+.container{
+    max-width: 1220px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    margin-right: 70px;
+}
+.menu__list{
+    display: flex;
+}
+.menu__item + .menu__item {
+padding-left: 10px;
+}
+
+.menu__link{
+text-transform: uppercase;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+text-transform: uppercase;
+color: var(--text-primary-color);
+padding: 43px 20px;
+transition: all .3s;
+}
+.menu__link:hover{
+    background-color: var(--text-primary-color) ;
+    color: var(--white-color);
+}
+/*---------------------------------BIKE----------------------------*/
+.bike{
+    padding: 100px 0 0;
+    
+}
+.bike__iner{
+   
+    display: flex;
+    justify-content: space-between;
+}
+.bike__collum-slider{
+    flex-basis: 630px;
+    margin-left: 30px;
+    max-width: 630px;
+}
+
+.bike__title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 77px;
+    color: var(--text-primary-color);
+    margin: 60px 0 5px;
+}
+
+.bike__sub-title{
+margin: 0 0 60px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 39px;
+color: var(--text-title-color);
+}
+
+.bike__text{
+    margin-bottom: 20px;
+    max-width: 420px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+}
+
+.bike__link{
+    display: inline-block;
+    background-color: var(--text-primary-color);
+    border-radius: 4px;
+    color: var(--white-color);
+
+    margin-top: 80px;
+    padding: 28px 81px 28px 110px;
+
+    max-width: 480px;
+    max-height: 80px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 1.1em;
+    text-transform: uppercase;
+    transition: all .3s;
+}
+.bike__link:hover{
+    background-color: var(--color-red);
+}
+.bike__list{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.bike__list-item{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    min-width: 160px;
+    text-align: center;
+}
+
+.bike__list-item span {
+    text-align: center;
+    margin-top: 10px;
+    display: block;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: lowercase;
+}
+/*-------section__info-------*/
+.info{
+    padding-top: 150px;
+    margin-bottom: 50px;
+}
+
+.info__inner{
+    display: flex;
+}
+
+.info__img{
+    margin-right: 60px;
+    flex-basis: 570px;
+}
+
+.info__list{
+    margin-left: auto;
+    flex-basis: 490px;
+}
+
+.info__item-text{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 120%;
+color: var(--text-primary-color);
+width: 450px;
+margin: 0;
+margin-bottom: 50px;
+}
+
+.info__item-title{
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: var(--text-primary-color);
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 19px;
+text-transform: uppercase;
+}
+/*------------charakteristics-----------------*/
+p{
+    margin: 0;
+}
+.charakteristics{
+    padding-top: 100px;
+    margin-bottom: 150px;
+}
+.charakteristics__head{
+    margin: 0 0 40px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;   
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+}
+
+.charakteristics__inner{
+    display: flex;
+}
+
+.charakteristics__img{
+    align-self: center;
+}
+
+.charakteristics__items{
+    flex-basis: 570px;
+    margin-right: 60px;
+}
+
+.characteristics__list + .characteristics__list{
+padding-top: 30px;
+}
+
+.characteristics__title{
+    padding: 2px 0 3px;
+    text-transform: uppercase;
+    background-color: var(--text-primary-color) ;
+    color: var(--white-color);
+}
+.characteristics__line{
+    display: flex;
+    padding-top: 5px;
+}
+.characteristics__name{
+    flex-basis: 285px;
+    padding-right: 25px;
+}
+.characteristics__descr{
+    flex-basis: 285px;
+}
+
+/*-------------slider--------------*/
+
+.slider{
+    margin-bottom: 50px;
+}
+
+.slider__items .slick-dots{
+top: 0;
+left: 0;
+}
+
+.slider__item{
+    padding-left: 50px;
+}
+
+/*---------------price---------------*/
+
+.form{
+    max-width: 420px;
+}
+.price__inner{
+    position: relative;
+}
+.form__title{
+    margin-bottom: 40px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+}
+
+.form__text{
+    margin-bottom: 30px;
+    max-width: 300px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+}
+
+.form__input-name,
+.form__input-phone{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--text-primary-color);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.form__input-name::placeholder,
+.form__input-phone::placeholder{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    opacity: 0.5;
+    color: var(--text-title-color);
+}
+
+.form__input-text{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    opacity: 0.5;
+    color: var(--text-title-color);
+    margin-bottom: 10px;
+}
+
+.form__label-box{
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.form__input-radio{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
+.form__input-radio:checked + .form__bike{
+    display: block;
+  
+}
+
+.form__bike{
+display: none;
+position: absolute;
+right: 0;
+top: 0;
+}
+
+.form__bike-price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+   
+    width: 220px;
+    height: 100px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    color: var(--text-primary-color);
+    border: 1px solid var(--color-red) ;
+    border-radius: 50%;
+    transform: translateX(-50%);
+}
+.form__bike-price::after{
+    content: "";
+    position: absolute;
+    width: 220px;
+    height: 100px;
+    border: 1px solid var(--color-red) ;
+    border-radius: 50%;
+    top: 12px;
+}
+.form__radio-style{
+border-radius: 30px;
+width: 80px;
+height: 12px;
+cursor: pointer;
+}
+.form__label + .form__label{
+    margin-left: 23px;
+}
+.form__radio-style--grey{
+background-color: var(--text-title-color);
+}
+.form__radio-style--white{
+    background-color: var(--white-color);
+    border: 1px solid #6F6F6F;
+}
+.form__radio-style--red{
+    background-color: var(--color-red);
+}
+.form__btn{
+    background-color: var(--text-primary-color);
+    padding: 28px 81px;
+    border: none;
+    color: var(--white-color);
+    text-transform: uppercase;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 1.1em;
+    cursor: pointer;
+    transition: all .3s;
+}
+.form__btn:hover, :focus{
+    background-color: var(--color-red);
+}
+/*----------------FOOTER---------------*/
+
+.footer{
+    margin-top: 100px;
+
+    background-color: var(--text-primary-color);
+}
+
+.footer__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.footer__link{
+    color: var(--white-color);
+    text-decoration: underline;
+}
+
+.footer__social-link + .footer__social-link{
+    margin-left: 20px;
+}
+
+.footer__contacts{
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: var(--white-color);
+    text-transform: lowercase;
+}
+.footer__contacts-link{
+    display: flex;
+    align-items: center;
+   
+}
+.footer__contacts-link + .footer__contacts-link{
+    margin-top: 10px;
+}
+.footer__contacts-img{
+    margin-right: 10px;
+}
+ /* --------------media---------------  */
+ @media screen and (max-width: 1140px){
+    .form__bike-img{
+        width: 450px;
+    }
+    .form__bike-price{
+        width: 110px;
+        height: 50px;
+        top: 10px;
+        left: 41px;
+        font-size: 14px;
+        line-height: 29px;
+    }
+    
+    .form__bike-price::after {
+        content: "";
+        position: absolute;
+        width: 110px;
+        height: 50px;
+        border: 1px solid var(--color-red);
+        border-radius: 50%;
+        top: 6px;
+    }
+    .form__bike{
+        top: 45px;
+    }
+ }
+ @media screen and (max-width: 1100px) {
+ .bike__iner{
+    flex-wrap: wrap;
+    }
+.bike__text{
+    max-width: 100%;
+}
+.charakteristics{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 0;
+}
+.slider__img{
+    object-fit:cover;
+    height: 350px;
+}
+.bike{
+    padding: 0;
+}
+.bike__link{
+    margin-top: 30px;
+}
+.bike__collum{
+    margin-bottom: 30px;
+}
+.bike__collum-slider{
+    max-width: 100%;
+    margin-left: 0;
+}
+.info__img{
+    display: none;
+}
+.info__list{
+    flex-basis: 100%;
+}
+.info__item-text{
+    width: 100%;
+    margin-bottom: 15px;
+}
+.info{
+    padding-top: 50px;
+}
+.price{
+    margin-bottom: 50px;
+}
+}
+
+
+
+@media screen and (max-width: 991px) {
+    
+  .menu{
+      margin-right: 0;
+  }
+  .charakteristics__img{
+      order: -1;
+      margin-bottom: 15px;
+      max-width: 100%;
+  }
+  .charakteristics__inner{
+      flex-wrap: wrap;
+  }
+  .charakteristics__head{
+      margin-bottom: 5px;
+  }
+  .charakteristics__items{
+      flex-basis: 100%;
+      margin-bottom: 0;
+      margin-right: 0px;
+  }
+  .characteristics__name{
+      flex-basis:50%;
+  }
+  .characteristics__descr{
+    flex-basis:50%;
+}
+.form__label-box {
+    margin-bottom: 300px;
+}
+
+.form__bike {
+    top: 280px;
+    left: 10px;
+}
+.form__btn{
+    margin-top: 20px;
+}
+
+.form__bike-price{
+    width: 110px;
+    height: 50px;
+    top: -6px;
+    left: 400px;
+    font-size: 16px;
+    line-height: 29px;
+}
+
+.form__bike-price::after {
+    content: "";
+    position: absolute;
+    width: 110px;
+    height: 50px;
+    border: 1px solid var(--color-red);
+    border-radius: 50%;
+    top: 6px;
+}
+}
+
+@media screen and (max-width: 670px){
+   .bike__title{
+    font-family: 'Inter';
+    font-style: normal;
+  
+    font-size: 44px;
+    line-height: 57px;
+   
+    margin: 30px 0 5px;
+   }
+   .bike__sub-title {
+    margin: 0 0 30px;
+    font-family: 'Inter';
+    font-style: normal;
+    
+    font-size: 22px;
+    line-height: 29px;
+    }
+    .bike__list{
+        flex-wrap: wrap;
+    }
+    .bike__list-item{
+        width: 50%;
+        margin-bottom: 15px;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+    .header__inner{
+        display: block;
+        text-align: center;
+    }
+    .menu{
+        margin-top: 50px;
+    }
+    .menu__list{
+        justify-content: space-evenly;
+        font-size: 12px;
+    }
+    .menu__item + .menu__item{
+        padding-left: 0;
+    }
+    .menu__link{
+        padding: 25px 20px;
+    }
+    .slider__img{
+        height: 250px;
+    }
+    .form__title{
+        text-align: center;
+    }
+    .form__text{
+        max-width: 100%;
+    }
+    .form__input-text{
+        text-align: center;
+    }
+    .form__label-box{
+        justify-content: center;
+    }
+    .form__btn{
+        max-height: 100%;
+    }
+    .footer__inner{
+        display: block;
+        height: auto;
+        padding: 15px;
+        text-align: center;
+    }
+    .footer__social{
+        padding: 15px 0;
+    }
+    .footer__contacts{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+  }
+
+@media screen and (max-width: 470px){
+    .bike__link {
+       
+        padding: 15px 15px 15px 15px;
+        letter-spacing: .9em;
+        font-size: 16px;
+}
+}
+@media screen and (max-width: 460px) {
+    
+    .menu{
+        margin-right: 0;
+    }
+    .menu__list{
+        justify-content: space-between;
+    }
+    .menu__link{
+        padding: 25px 20px;
+    }
+    .form__bike-img {
+        margin-top: 50px;
+        width: 350px;
+    }
+    .form__bike-price {
+        width: 110px;
+        height: 50px;
+        top: 37px;
+        left: 342px;
+        font-size: 16px;
+        line-height: 29px;
+    }
+  }
+  @media screen and (max-width: 340px) {
+    .menu{
+        margin-top: 30px;
+    }
+    .menu__link{
+       font-size: 12px;
+    }
+    .slider{
+        display: none;
+    }
+
+  }
